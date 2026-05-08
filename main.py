@@ -44,7 +44,7 @@ def salvar_csv(nome_arquivo, lista_dados):
    
     cabecalho = lista_dados[0].keys()
     
-    with open(nome_arquivo, mode='w', encoding='utf-8', newline='') as arquivo:
+    with open(nome_arquivo, mode='w', encoding='utf-8', newline='') a
         escritor = csv.DictWriter(arquivo, fieldnames=cabecalho)
         escritor.writeheader()    
         escritor.writerows(lista_dados) 
